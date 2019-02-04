@@ -38,10 +38,44 @@ class Movie
   def get_mpaa_rating
     array = []
     get_results.each do |m|
-      array <<m['mpaa_rating']
+     array << m['mpaa_rating']
     end
     array
   end
+
+  def get_critics_pick 
+    array = []
+    get_results.each do |c|
+      array <<c['critics_pick']
+    end
+    array
+  end
+
+  def get_byline
+    array = []
+    get_results.each do |b|
+      array << b['byline']
+    end
+    array
+  end
+
+  def get_review
+    array = []
+    get_results.each do |h|
+      array << h['headline']
+    end
+    array
+  end
+
+  def get_summary_short
+    array = []
+    get_results.each do |s|
+      array << s['summary_short']
+    end
+    array
+  end
+  
+  
 
   
 
