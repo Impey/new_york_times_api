@@ -74,8 +74,46 @@ class Movie
     end
     array
   end
+
+  def get_publication_date
+    array = []
+    get_results.each do |d|
+      array << d['publication_date']  
+    end
+    array
+  end
+
+  def get_opening_date
+    array = []
+    get_results.each do |od|
+      array << od['opening_date']  
+    end
+    array
+  end
+
+  def get_date_updated 
+    array = []
+    get_results.each do |du|
+      array << du['date_updated']
+    end
+    array
+  end
+
+  def get_link
+    array = []
+    get_results.each do |l|
+      array << l['link']
+    end
+    array
+  end
   
-  
+  def get_type
+    array = []
+    get_link.each do |t|
+      array << t['type']
+    end
+    array
+  end
 
   
 

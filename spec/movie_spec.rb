@@ -60,11 +60,51 @@ describe Movie_review do
     end
   end
 
-  it 'should return all summary reports as strings' do
+  it 'should return all summary reports as a string' do
     @movies.get_summary_short.each do |s|
       expect(s).to be_kind_of(String)
     end
   end
+
+  it 'should return all publication dates as a string' do
+    @movies.get_publication_date.each do |d|
+      expect(d).to be_kind_of(String)
+    end
+  end
+
+  it 'All dates should not be greater then 10 characters' do @movies.get_publication_date.each do |d|
+    expect(d.length).not_to be > 10
+  end
+end
+
+it 'should return all opening dates as a string' do
+  @movies.get_opening_date.each do |od|
+    expect(od).to be_kind_of(String) |  be_nil
+  end
+end
+#This test has found some inconsistend data
+it 'All dates should not be greater then 10 characters' do @movies.get_opening_date.each do |d|
+  if !(d == nil)
+   expect(d.length).not_to be > 10
+  end
+ end
+end
+
+it 'should return all links as object' do 
+  @movies.get_link.each do |l|
+    expect(l).to be_kind_of(Object)
+  end
+end
+
+it 'should return all types as a string' do 
+  @movies.get_type.each do |t|
+    expect(t).to be_kind_of(String)
+  end
+end
+
+
+
+
   
 
 
