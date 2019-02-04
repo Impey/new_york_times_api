@@ -3,7 +3,7 @@ require_relative 'services/Movie'
 class Movie_review
 
   def movie_search
-   Move.new
+    Movie.new
   end
 
 
