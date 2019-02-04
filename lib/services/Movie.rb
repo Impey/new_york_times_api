@@ -115,6 +115,64 @@ class Movie
     array
   end
 
+  def get_url
+    array = []
+    get_link.each do |u|
+      array << u['url']
+    end
+    array
+  end
+
+  def get_suggested_link_text
+    array = []
+    get_link.each do |sl|
+      array << sl['suggested_link_text']
+    end
+    array
+  end
+
+  def get_multimedia
+    array = []
+    get_results.each do |m|
+      array << m['multimedia']
+    end
+    array
+  end
+
+  def get_multimedia_type
+    array = []
+    get_multimedia.each do |mt|
+      array << mt['type']
+    end
+    array
+  end
+
+  def get_src 
+    array = []
+    get_multimedia.each do |s|
+      array << s['src']
+    end
+    array
+  end
+
+  def get_width 
+    array = []
+    get_multimedia.each do |w|
+      array << w['width']
+    end
+    array
+  end
+  
+  def get_height
+    array = []
+    get_multimedia.each do |h|
+      array << h['height']
+    end
+    array
+  end
+  
+    
+
   
 
 
