@@ -82,6 +82,7 @@ it 'should return all opening dates as a string' do
     expect(od).to be_kind_of(String) |  be_nil
   end
 end
+
 #This test has found some inconsistend data
 it 'All dates should not be greater then 10 characters' do @movies.get_opening_date.each do |d|
   if !(d == nil)

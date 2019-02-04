@@ -1,7 +1,6 @@
 require 'httparty'
 require 'json'
 require 'dotenv'
-
 Dotenv.load('.env')
 
 class Movie
