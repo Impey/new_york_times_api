@@ -1,6 +1,6 @@
 # new_york_times_api
 ## Description
-Using the New York Times API. I tested the movies service of the api in which it queries the API and finds movies related to your query eg "star" returns "star wars" and "A star is born" . I have tested that all data returned from api is correct and consisten. This has all been done using the Service object model(SOM) approach so if another service of the api needs to be tested it is easily expandable with the SOM structure.
+Using the New York Times API. I tested the movies service of the api in which it queries the API and finds movies related to your query eg "star" returns "star wars" and "A star is born" . I have tested that all data returned from api is correct and consistent. This has all been done using the Service object model(SOM) approach so if another service of the api needs to be tested it is easily expandable with the SOM structure.
 
 ## Languages used
 1. Ruby
@@ -20,7 +20,7 @@ API_KEY= add your key here
 ``` ruby 
 @movies.getdata('star')
 ```
-4. After changing the city rerun the "rspec" to check the tests still pass
+5. After changing the city rerun the "rspec" to check the tests still pass
 
 ## Challenges
 1. Time restrction being tighter on this mini project lead to only one service being tested
