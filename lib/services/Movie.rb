@@ -14,7 +14,7 @@ class Movie
   end
 
   def get_status
-    array=[]
+    array = []
      array << @movie['status']
    array
   end
